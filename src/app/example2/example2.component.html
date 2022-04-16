@@ -1,0 +1,70 @@
+<h1 class="ms-3 mt-3">再把 ControlValueAccessor 抽絲剝皮</h1>
+
+<hr />
+
+<div class="mb-3">
+  <p class="lead mb-1">1.客製 app-text-input ，自己實現 ControlValueAccessor 相關函式。</p>
+
+  <app-text-input [formControl]="testFormControl"></app-text-input>
+
+</div>
+
+<div class="mb-3">
+  <p class="lead mb-1">2. touched</p>
+  touched: {{ testFormControl.touched }}
+</div>
+
+<div class="mb-3">
+  <p class="lead mb-1">3. untouched</p>
+  untouched: {{ testFormControl.untouched }}
+</div>
+
+<div class="mb-3">
+  <p class="lead mb-1">4.使用 setValue 更新值</p>
+  <button class="btn btn-outline-secondary mx-1" (click)="setValue()">
+    使用 setValue
+  </button>
+  <button class="btn btn-outline-secondary mx-1" (click)="setValue(false)">
+    使用 setValue (emitEvent:false)
+  </button>
+</div>
+
+<div class="mb-3">
+  <p class="lead mb-1">5.使用 patchValue 更新值</p>
+  <button class="btn btn-outline-secondary mx-1" (click)="patchValue()">
+    使用 patchValue
+  </button>
+  <button class="btn btn-outline-secondary mx-1" (click)="patchValue(false)">
+    使用 patchValue (emitEvent:false)
+  </button>
+</div>
+
+<div class="mb-3">
+  <p class="lead mb-1">6.使用 reset 更新值 && 還原狀態</p>
+  <button class="btn btn-outline-secondary mx-1" (click)="reset()">
+    使用 reset
+  </button>
+  <button class="btn btn-outline-secondary mx-1" (click)="reset(false)">
+    使用 reset (emitEvent:false)
+  </button>
+</div>
+
+<div class="mb-3">
+  <p class="lead mb-1">7.使用 disable</p>
+  <button class="btn btn-outline-secondary mx-1" (click)="disable()">
+    使用 disable
+  </button>
+  <button class="btn btn-outline-secondary mx-1" (click)="disable(false)">
+    使用 disable (emitEvent:false)
+  </button>
+</div>
+
+<div class="mb-3">
+  <p class="lead mb-1">8.使用 enable</p>
+  <button class="btn btn-outline-secondary mx-1" (click)="enable()">
+    使用 enable
+  </button>
+  <button class="btn btn-outline-secondary mx-1" (click)="enable(false)">
+    使用 enable (emitEvent:false)
+  </button>
+</div>

@@ -1,0 +1,13 @@
+:host(.ng-touched) {
+  input {
+    border: 1px solid blue;
+  }
+}
+
+:host(.ng-touched.ng-invalid) {
+  input {
+    border: 1px solid red;
+  }
+}
+
+

@@ -1,0 +1,11 @@
+.currency-input{
+
+  &.ng-touched.ng-valid{
+    border: 1px solid green;
+  }
+
+  &.ng-touched.ng-invalid{
+    border: 1px solid red;
+  }
+
+}
