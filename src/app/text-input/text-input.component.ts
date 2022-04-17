@@ -68,10 +68,12 @@ export class TextInputComponent implements OnInit, ControlValueAccessor {
   }
 
   onInput(value: string): void {
+    console.log('使用 onChange 通知改變值 : ', value);
     this.onChange(value);
   }
 
   onBlur(): void {
+    console.log('使用 onTouched 通知已被觸碰');
     this.onTouched();
   }
 

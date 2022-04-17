@@ -7,10 +7,7 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./example3.component.scss'],
 })
 export class Example3Component implements OnInit {
-  testFormControl = new FormControl(123456, [
-    Validators.required,
-    Validators.pattern('^[0-9]*$'),
-  ]);
+  testFormControl = new FormControl(123456, Validators.pattern('^[0-9]*$'),);
 
   testField = '123456789';
 

@@ -13,7 +13,7 @@
 </div>
 
 <div class="mb-3">
-  <p class="lead mb-1">2. 使用 Directive (另一種方式) </p>
+  <p class="lead mb-1">2. 使用 Directive (另一種方式)</p>
 
   <input
     appCurrencyInput
@@ -29,11 +29,6 @@
 
   <span class="fw-light text-danger" *ngIf="testFormControl.hasError('pattern')"
     >只允許輸入數字</span
-  >
-  <span
-    class="fw-light text-danger"
-    *ngIf="testFormControl.hasError('required')"
-    >此欄位必填</span
   >
 </div>
 
@@ -59,10 +54,7 @@
       使用 enable
     </button>
 
-    <button
-      class="btn btn-outline-secondary m-1"
-      (click)="className = 'w-100'"
-    >
+    <button class="btn btn-outline-secondary m-1" (click)="className = 'w-100'">
       使用 w-100
     </button>
 
