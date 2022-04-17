@@ -3,10 +3,13 @@
 <hr />
 
 <div class="mb-3">
-  <p class="lead mb-1">1.客製 app-text-input ，自己實現 ControlValueAccessor 相關函式。</p>
+  <p class="lead mb-1">
+    1.客製 app-text-input ，自己實現 ControlValueAccessor 相關函式。
+  </p>
 
   <app-text-input [formControl]="testFormControl"></app-text-input>
 
+  <p class="mt-1"> 當前 testFormControl.value : {{ testFormControl.value }}</p>
 </div>
 
 <div class="mb-3">
